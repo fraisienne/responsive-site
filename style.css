@@ -21,6 +21,7 @@ h1 {
     font-size: 200%; /* 親要素bodyの14pxを基準に200% =28px */
     font-size: 3.2em; /* 親要素bodyの14pxを基準に2倍 =28px */
     font-size: 3.2rem; /* rootの10pxを基準に2倍 =20px */
+    margin-top: 20px;
 }
 .text-center {
     text-align: center;
@@ -120,7 +121,7 @@ section.text-box {
 .text2 
 {
     margin-bottom: 60px;
-    margin-top: 60px;
+    margin-top: 80px;
     clear: both;
 }
 .button {
@@ -131,11 +132,15 @@ section.text-box {
     border-radius: 10px;
 }
 @media (max-width:768px) {
-    .text-box {
-        height: 250px;
-    }
+        .box{
+         height: 250px;
+          }
+        .text-box {
+        height: 150px;
+          }
 section.title {
         float: none;
         width: 100%;
+        margin-bottom: -100px;
     }
 }
