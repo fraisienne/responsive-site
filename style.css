@@ -1,0 +1,141 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+   /* Google Fonts用のCSSを読み込み */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+html
+{
+    font-size: 62.5%; /* ベースとなるフォントサイズの定義 */
+}
+.box {
+  background-image:url(./images/img_updated_pic.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+h1 {
+    font-size: 20px; /* そのまま20px */
+    font-size: 200%; /* 親要素bodyの14pxを基準に200% =28px */
+    font-size: 3.2em; /* 親要素bodyの14pxを基準に2倍 =28px */
+    font-size: 3.2rem; /* rootの10pxを基準に2倍 =20px */
+}
+.text-center {
+    text-align: center;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+section
+{
+    padding: 60px 0; /* section要素の余白を上下60pxで揃える */
+}
+section .container
+{
+    width: 90%; /* sectionの中のインナーボックスをウィンドウ幅に対して90%に */
+}
+section h2
+{
+    font-size: 3.2rem;/* section要素見出しを32pxで揃える */
+}
+.block-center,
+section .container
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Montserrat,
+section h2
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uppercase,
+section h2
+{
+    text-transform: uppercase;
+}
+section h3
+{
+    font-size: 3.2rem;/* section要素見出しを32pxで揃える */
+}
+.block-center,
+section .container
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Montserrat,
+section h3
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.uppercase,
+section h3
+{
+    text-transform: uppercase;
+}
+
+section.title {
+    float: left;
+    width: 33.33%;
+}
+section.text-box {
+    float: left;
+    width: 33.33%;
+}
+.title h2
+{
+    color: #000000;
+    background-color: #4dbcfc;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.title .text-box
+{
+    padding: 60px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #b5e4ff;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.text2 
+{
+    margin-bottom: 60px;
+    margin-top: 60px;
+    clear: both;
+}
+.button {
+    background-color: #b5e4ff;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+@media (max-width:768px) {
+    .text-box {
+        height: 250px;
+    }
+section.title {
+        float: none;
+        width: 100%;
+    }
+}
